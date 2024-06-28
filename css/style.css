@@ -103,14 +103,14 @@ body {
 
 .section--hero img {}
 
-/* * info__more */
+/* * info */
 
-.container--info {
+.container--hero {
     height: var(--height-auto);
     position: relative;
 }
 
-.info__more {
+.section__content {
     display: flex;
     max-width: 624px;
     width: 100%;
@@ -123,26 +123,23 @@ body {
     padding-top: 20px;
 }
 
-.more {
+.section__title {
     max-width: 485px;
     width: 100%;
     padding: 10px 50px;
     max-height: 220px;
-}
-
-.more--h1 {
     font-weight: 400;
     font-size: 62px;
     color: #000;
 }
 
-.more__button {
+.section__button {
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
-.button--info {
+.button {
     padding: 10px 10px;
     max-width: 272px;
     width: 100%;
@@ -164,21 +161,21 @@ body {
     padding-top: 80px;
 }
 
-.paragraph__span--blue {
+.span {
     font-weight: 700;
     font-size: 18px;
     line-height: 189%;
     color: #52bedc;
 }
 
-.city__img {
+.city__images {
     margin-top: 60px;
     display: flex;
     gap: 32px;
     align-items: center;
 }
 
-.city__images--one-two {
+.city__images__number {
     display: flex;
     gap: 32px;
     flex-direction: column;
@@ -201,46 +198,44 @@ body {
     background-color: #000000;
 }
 
-.action__header {
+.section__action__header {
     display: flex;
     gap: 32px;
     align-items: flex-end;
     padding-top: 70px;
 }
 
-.action__header--img {}
-
-.action__header--h1 {
+.section__action__header__h1 {
     font-weight: 400;
     font-size: 62px;
     color: #fff;
 }
 
-.action__paragraphs {
+.section__action__paragraphs {
     max-width: 955px;
     margin-top: 30px;
     padding-bottom: 100px;
 }
 
-.action__paragraph {
+.section__action__paragraph {
     font-weight: 400;
     font-size: 18px;
     line-height: 189%;
     color: #fff;
 }
 
-.action__forms {
+.section__action__forms {
     display: flex;
     padding-bottom: 100px;
 }
 
-.action__form--info {
+.section__action__form__info__scrin {
     display: flex;
     flex-direction: column;
     gap: 55px;
 }
 
-.scrin__and__forms {
+.section__action__form {
     display: flex;
     flex-direction: column;
     max-width: 460px;
@@ -255,13 +250,13 @@ body {
     color: #fff;
 }
 
-.action__form--info input::placeholder {
+.section__action__form__info__scrin input::placeholder {
     font-weight: 300;
     font-size: 18px;
     color: #fff;
 }
 
-.scrin {
+.section__action__scrin__info {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -274,7 +269,7 @@ body {
     /* добавление внутренних отступов в 20 пикселей */
 }
 
-.scrin__link {
+.section__action__scrin__link {
     font-weight: 300;
     font-size: 18px;
     text-decoration: underline;
@@ -282,13 +277,13 @@ body {
     color: #fff;
 }
 
-.scrin__paragraph {
+.section__action__scrin__paragraph {
     font-weight: 300;
     font-size: 12px;
     color: #fff;
 }
 
-.form__button {
+.section__action__button__first {
     border: none;
     font-weight: 700;
     font-size: 18px;
@@ -298,13 +293,12 @@ body {
     margin-top: 35px;
 }
 
-.forms__paragraph {
+.section__action__form__link__info {
     padding-top: 15px;
 }
 
-.form__paragraph {}
 
-.form__link {
+.section__action__form__link {
     padding-top: 2px;
     display: flex;
     gap: 5px;
@@ -319,14 +313,14 @@ body {
     display: none;
 }
 
-.action__header--images {
+.section__action__header__image {
     display: flex;
     width: 100%;
     gap: 32px;
     justify-content: center
 }
 
-.action__header--image--one {
+.section__action__header__image__one {
     max-width: 200px;
     width: 100%;
     background: url(/img/Layer521.svg) right no-repeat;
@@ -334,7 +328,7 @@ body {
     padding-left: 20px;
 }
 
-.action__header--image--two {
+.section__action__header__image__two {
     max-width: 200px;
     width: 100%;
     background: url(/img/layer531.svg) right no-repeat;
@@ -342,13 +336,13 @@ body {
     padding-left: 20px;
 }
 
-.action__form--images {
+.section__action__form__images {
     display: flex;
     width: 100%;
     margin-left: px;
 }
 
-.action__form--image--one {
+.section__action__form__image__one {
     max-width: 460px;
     width: 100%;
     background: url(/img/layer5.svg) left no-repeat;
@@ -358,7 +352,7 @@ body {
     padding-bottom: 80px;
 }
 
-.action__form--image--two {
+.section__action__form__image__two {
     max-width: 460px;
     width: 100%;
     background: url(/img/layer6.svg) right no-repeat;
@@ -368,13 +362,13 @@ body {
     padding-bottom: 80px;
 }
 
-.form--image--one {
+.section__form__image__one {
     object-fit: cover;
     height: auto;
     width: 300px;
 }
 
-.form--image--two {
+.section__form__image__two {
     object-fit: cover;
     height: auto;
     width: 300px;
@@ -387,18 +381,18 @@ body {
 
 }
 
-.info__market {
+.section__info__images {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
     align-items: center;
 }
 
-.info__market--img {
+.section__info__market__image {
     width: 624px;
 }
 
-.info__hp_and__cyberpunk {
+.section__info__market__images {
     display: flex;
     margin-top: 25px;
     gap: 25px;
@@ -409,7 +403,7 @@ body {
     display: flex;
 }
 
-.info__market__title__and__btn {
+.section__info__market {
     display: flex;
     gap: 30px;
     padding-bottom: 70px;
@@ -570,7 +564,7 @@ body {
 
 /* * container__grid */
 
-.container__grid {
+.container--grid {
     display: grid;
     grid-template-columns: 400px 1fr 2fr;
     align-items: center;
@@ -589,25 +583,25 @@ body {
 }
 
 @media screen and (max-width:1280px) {
-    .action__form--images {
+    .section__action__form__images {
         flex-direction: column;
     }
 
-    .info__more {
+    .section__content {
         max-height: 320px;
         max-width: 530px;
     }
 
-    .more__button {
+    .section__button {
         padding-top: 0;
     }
 
-    .city__img {
+    .city__images {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .city__images--one-two {
+    .city__images__number {
         flex-direction: row;
     }
 
@@ -615,7 +609,7 @@ body {
         display: block;
     }
 
-    .action__header {
+    .section__action__header {
         flex-direction: column;
         align-items: flex-start;
 
@@ -625,12 +619,12 @@ body {
         display: block;
     }
 
-    .container__action {
+    .container--city {
         display: flex;
         align-items: center;
     }
 
-    .info__hp_and__cyberpunk {
+    .section__info__market__images {
         flex-direction: column;
         align-items: center;
         padding: 0;
@@ -642,19 +636,19 @@ body {
         flex-direction: column;
     }
 
-    .city__images--one-two {
+    .city__images__number {
         overflow: hidden;
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
 
-    .city__img--one {
+    .city__image__one {
         height: 196px;
         background-size: contain;
     }
 
-    .city__img--two {
+    .city__image__two {
         min-height: 320px;
         width: 100%;
     }
@@ -670,15 +664,15 @@ body {
         gap: 20px;
     }
 
-    .more--h1 {
+    .section__title {
         font-size: 45px;
     }
 
-    .button--info {
+    .button {
         font-size: 16px;
     }
 
-    .info__more {
+    .section__content {
         max-width: 400px;
         max-height: 240px;
         padding: 0;
@@ -692,19 +686,19 @@ body {
         font-size: 16px;
     }
 
-    .city__img {
+    .city__images {
         gap: 0;
     }
 
-    .action__form--images {
+    .section__action__form__images {
         display: none;
     }
 
-    .container__grid {
+    .container--grid {
         display: block;
     }
 
-    .info__market__title__and__btn {
+    .section__info__market {
         flex-direction: column;
     }
 
@@ -732,7 +726,7 @@ body {
         width: auto;
     }
 
-    .info__hp_and__cyberpunk {
+    .section__info__market__images {
         flex-direction: row;
         gap: 5px;
     }
@@ -741,7 +735,7 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-    .action__header--images {
+    .section__action__header__image {
         display: none;
     }
 }
@@ -759,40 +753,40 @@ body {
         font-size: 16px;
     }
 
-    .img--hp {
+    .section__info__image__hp {
         width: 40px;
         height: 40px;
     }
 
-    .img--x {
+    .section__info__image__x {
         width: 50px;
         height: 10px;
     }
 
-    .img--cyber {
+    .section__info__image__cyber {
         width: 175px;
         height: 45px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .more--h1 {
+    .section__title {
         text-align: center;
         font-size: 30px;
     }
 
-    .info__more {
+    .section__content {
         display: flex;
         align-items: center;
         max-height: 190px;
     }
 
-    .more__button {
+    .section__button {
         padding-left: 0;
         padding-right: 0;
     }
 
-    .button--info {
+    .button {
         font-size: 20px;
         line-height: 200%;
         text-align: center;
@@ -806,7 +800,7 @@ body {
         font-size: 16px;
     }
 
-    .action__header--h1 {
+    .section__action__header__h1 {
         font-size: 30px;
     }
 
@@ -814,11 +808,11 @@ body {
         display: none;
     }
 
-    .action__paragraph {
+    .section__action__paragraph {
         font-size: 16px;
     }
 
-    .info__market {
+    .section__info__images {
         align-items: flex-start;
     }
 
@@ -826,11 +820,11 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-    .action__header--image--one {
+    .action__header__image__one {
         background-size: 150px;
     }
 
-    .action__header--image--two {
+    .action__header__image__two {
         background-size: 150px;
     }
 
@@ -843,4 +837,3 @@ body {
         flex-direction: column;
     }
 }
-

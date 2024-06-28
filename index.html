@@ -35,13 +35,13 @@
 
     <main class="main">
         <section class="section section--hero">
-            <div class="container container--info">
-                <div class="info__more">
-                    <div class="more">
-                        <h1 class="more--h1">Доступно на всех платформах</h1>
+            <div class="container container--hero">
+                <div class="section__content">
+                    <div class="section__title">
+                        <h1>Доступно на всех платформах</h1>
                     </div>
-                    <div class="more__button">
-                        <button class="button--info">Узнать больше</button>
+                    <div class="section__button">
+                        <button class="button">Узнать больше</button>
                     </div>
                 </div>
             </div>
@@ -84,6 +84,7 @@
             setInterval(changeBackgroundImage, 10000);
 
         </script>
+
         <script>
             const heroSectiontwo = document.querySelector('.section--hero');
             const smallImagestwo = ['url(img/fonsmaller-1.svg)', 'url(img/fonsmaller-2.svg)', 'url(img/fonsmaller-3.svg)'];
@@ -116,71 +117,69 @@
             setInterval(changeBackgroundImageTwo, 10000);
         </script>
 
-
-
         <section class="section">
-            <div class="container container__action">
+            <div class="container container--city">
                 <div class="city">
                     <div class="city__h1">Найт-Сити изменит<br class="br__h1__hero" style="display: none;"> тебя
                         навсегда!</div>
-                    <div class="city__paragraph"><span class="paragraph__span--blue">Cyberpunk 2077</span> —
+                    <div class="city__paragraph"><span class="span">Cyberpunk 2077</span> —
                         приключенческая ролевая
                         игра, действие
                         которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше
                         всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты
                         сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где
                         твои поступки влияют на ход сюжета и всё, что тебя окружает.</div>
-                    <div class="city__img">
-                        <div class="city__images--one-two">
-                            <img class="city__img--one" src="img/Rectangle 62.jpg" alt="">
-                            <img class="city__img--one" src="img/Rectangle 63.png" alt="">
+                    <div class="city__images">
+                        <div class="city__images__number">
+                            <img class="city__image__one" src="img/Rectangle 62.jpg" alt="">
+                            <img class="city__image__one" src="img/Rectangle 63.png" alt="">
                         </div>
-                        <img class="city__img--two" src="img/Rectangle 61.png" alt="">
+                        <img class="city__image__two" src="img/Rectangle 61.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section--action">
-            <div class="container container__grid">
-                <div class=" action__header">
-                    <img class="action__header--img" src="img/action.svg" alt="action">
-                    <div class="action__header--images">
-                        <div class="action__header--image--one"><img class="form--image--one" src="img/xbox.png"
+
+        <section class=" section section--action">
+            <div class="container container--grid">
+                <div class="section__action__header">
+                    <img src="img/action.svg" alt="action">
+                    <div class="section__action__header__image">
+                        <div class="section__action__header__image__one"><img class="section__form__image__one" src="img/xbox.png"
                                 alt="1">
                         </div>
-                        <div class="action__header--image--two"><img class="form--image--two" src="img/ps5.png" alt="2">
+                        <div class="section__action__header__image__two"><img class="section__form__image__two" src="img/ps5.png" alt="2">
                         </div>
                     </div>
-                    <h1 class="action__header--h1">Играй и<br class="br__h1__action"> выигрывай!</h1>
+                    <h1 class="section__action__header__h1">Играй и<br class="br__h1__action"> выигрывай!</h1>
                 </div>
-                <div class="action__paragraphs">
-                    <p class="action__paragraph">Играй в <span class="paragraph__span--blue">Cyberpunk 2077</span> и
-                        получи возможность выиграть консоль <span class="paragraph__span--blue">Xbox Series X</span> или
-                        <span class="paragraph__span--blue">
+                <div class="section__action__paragraphs">
+                    <p class="section__action__paragraph">Играй в <span class="span">Cyberpunk 2077</span> и
+                        получи возможность выиграть консоль <span class="span">Xbox Series X</span> или
+                        <span class="span">
                             Sony PlayStation
                             5!
                         </span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1
                         февраля. Удачи!
                     </p>
                 </div>
-                <div class="action__forms">
-                    <div class="scrin__and__forms">
-                        <div class="action__form--info">
+                <div class="section__action__forms">
+                    <div class="section__action__form">
+                        <div class="section__action__form__info__scrin">
                             <input class="form" type="text" placeholder="Как тебя зовут?">
                             <input class="form" type="text" placeholder="Твой е-mail">
                         </div>
-                        <div class="scrin">
-                            <a class="scrin__link" href="#" id="attachScreenshot">Прикрепить скриншот</a>
-                            <p class="scrin__paragraph">.png / .jpg / .pdf</p>
+                        <div class="section__action__scrin__info">
+                            <a class="section__action__scrin__link" href="#" id="attachScreenshot">Прикрепить скриншот</a>
+                            <p class="section__action__scrin__paragraph">.png / .jpg / .pdf</p>
                             <input type="file" id="fileInput" style="display: none">
-                            <a class="scrin__link" href="#" id="detachScreenshot">Открепить скриншот</a>
+                            <a class="section__action__scrin__link" href="#" id="detachScreenshot">Открепить скриншот</a>
                         </div>
-                        <div class="forms__button">
-                            <button class="form__button">Отправить</button>
+                        <div class="section__action__button">
+                            <button class="section__action__button__first">Отправить</button>
                         </div>
-                        <div class="forms__paragraph">
-                            <p class="form__paragraph">
-                                <a class="form__link" href="#" onclick="toggleCheckbox(event)">
+                        <div class="section__action__form__link__info">
+                                <a class="section__action__form__link" href="#" onclick="toggleCheckbox(event)">
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                         xmlns="http://www.w3.org/2000/svg" class="checkbox">
                                         <rect x="0.5" y="0.5" width="13" height="13" stroke="#777777" />
@@ -188,7 +187,6 @@
                                     </svg>
                                     Согласен на обработку персональных данных
                                 </a>
-                            </p>
                             <script>
                                 function toggleCheckbox(event) {
                                     event.preventDefault();
@@ -236,26 +234,27 @@
                         });
                     </script>
                 </div>
-                <div class="action__form--images" style="
+                <div class="section__action__form__images" style="
                 grid-row: 1 / 4;
                 grid-column: -1 / 2;
                 ">
-                    <div class="action__form--image--one"><img class="form--image--one" src="img/xbox.png" alt="1">
+                    <div class="section__action__form__image__one"><img class="section__form__image__one" src="img/xbox.png" alt="1">
                     </div>
-                    <div class="action__form--image--two"><img class="form--image--two" src="img/ps5.png" alt="2">
+                    <div class="section__action__form__image__two"><img class="section__form__image__two" src="img/ps5.png" alt="2">
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="section section--hp">
             <div class="container">
-                <div class="info__market__title__and__btn">
-                    <div class="info__market">
-                        <img class="info__market--img" src="img/hp.svg" alt="monitor">
-                        <div class="info__hp_and__cyberpunk">
-                            <img class="img--hp" src="img/hp-2-logo.svg" alt="hp">
-                            <img class="img--x" src="img/x.svg" alt="x">
-                            <img class="img--cyber" src="img/logo1.svg" alt="Cyberpunk">
+                <div class="section__info__market">
+                    <div class="section__info__images">
+                        <img class="section__info__market__image" src="img/hp.svg" alt="monitor">
+                        <div class="section__info__market__images">
+                            <img class="section__info__image__hp" src="img/hp-2-logo.svg" alt="hp">
+                            <img class="section__info__image__x" src="img/x.svg" alt="x">
+                            <img class="section__info__image__cyber" src="img/logo1.svg" alt="Cyberpunk">
                         </div>
                     </div>
                     <div class="info__title">
@@ -280,6 +279,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section section--buy">
             <img class="img__section--buy" src="img/unitled2324.svg" alt=" Cyberpunk">
             <div class="container container--buy">
@@ -311,7 +311,9 @@
                 </div>
             </div>
         </section>
+
     </main>
+
     <footer class="footer">
         <div class="footer__top">
             <div class="container container--footer">
@@ -333,6 +335,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
