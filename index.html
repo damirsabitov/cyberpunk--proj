@@ -22,12 +22,12 @@
                     <a href="#"><img src="img/logo1.svg" alt="logo"></a>
                 </div>
                 <div class="nav__end">
-                    <a href="#"><img src="img/youtube logo.svg" alt="logo__icon"></a>
-                    <a href="#"><img src="img/vk logo.svg" alt="logo__icon"></a>
-                    <a href="#"><img src="img/facebook-rect logo.svg" alt="logo__icon"></a>
-                    <a href="#"><img src="img/twitter-square logo.svg" alt="logo__icon"></a>
-                    <a href="#"><img src="img/twitch logo.svg" alt="logo__icon"></a>
-                    <a href="#"><img src="img/instagram-square logo.svg" alt="logo__icon"></a>
+                    <a href="#"><img src="img/youtubelogo.svg" alt="logo__icon"></a>
+                    <a href="#"><img src="img/vklogo.svg" alt="logo__icon"></a>
+                    <a href="#"><img src="img/facebook-rectlogo.svg" alt="logo__icon"></a>
+                    <a href="#"><img src="img/twitter-squarelogo.svg" alt="logo__icon"></a>
+                    <a href="#"><img src="img/twitchlogo.svg" alt="logo__icon"></a>
+                    <a href="#"><img src="img/instagram-squarelogo.svg" alt="logo__icon"></a>
                 </div>
             </div>
         </nav>
@@ -47,8 +47,79 @@
             </div>
         </section>
 
+        <script>
+            const heroSection = document.querySelector('.section--hero');
+            const images = ['url(img/fon1.svg)', 'url(img/fon2.svg)', 'url(img/fon3.svg)'];
+            const smallImages = ['url(img/fon-small1.svg)', 'url(img/fon-small2.svg)', 'url(img/fon-small3.svg)'];
+            let currentImageIndex = 0;
+
+            function changeBackgroundImage() {
+                const screenWidth = window.innerWidth;
+                if (screenWidth <= 1280) {
+                    heroSection.style.background = smallImages[currentImageIndex];
+                } else {
+                    heroSection.style.background = images[currentImageIndex];
+                }
+                heroSection.style.backgroundSize = 'cover';
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+            }
+
+            function handleResize() {
+                const screenWidth = window.innerWidth;
+                if (screenWidth <= 1280) {
+                    heroSection.style.background = smallImages[currentImageIndex];
+                } else {
+                    heroSection.style.background = images[currentImageIndex];
+                }
+                heroSection.style.backgroundSize = 'cover';
+                heroSection.style.backgroundRepeat = 'no-repeat';
+            }
+
+            window.addEventListener('resize', handleResize);
+
+            // Show the initial background image immediately
+            changeBackgroundImage();
+
+            // Show the rest of the backgrounds every 10 seconds
+            setInterval(changeBackgroundImage, 10000);
+
+        </script>
+
+        <script>
+            const heroSectiontwo = document.querySelector('.section--hero');
+            const smallImagestwo = ['url(img/fonsmaller-1.svg)', 'url(img/fonsmaller-2.svg)', 'url(img/fonsmaller-3.svg)'];
+            let currentImageIndextwo = 0;
+
+            function changeBackgroundImageTwo() {
+                const screenWidth = window.innerWidth;
+                if (screenWidth <= 500) {
+                    heroSectiontwo.style.background = smallImagestwo[currentImageIndextwo];
+                }
+                heroSectiontwo.style.backgroundSize = 'cover';
+                currentImageIndextwo = (currentImageIndextwo + 1) % smallImagestwo.length;
+            }
+
+            function handleResizeTwo() {
+                const screenWidth = window.innerWidth;
+                if (screenWidth <= 500) {
+                    heroSectiontwo.style.background = smallImagestwo[currentImageIndextwo];
+                }
+                heroSectiontwo.style.backgroundSize = 'cover';
+                heroSectiontwo.style.backgroundRepeat = 'no-repeat';
+            }
+
+            window.addEventListener('resize', handleResizeTwo);
+
+            // Show the initial background image immediately
+            changeBackgroundImageTwo();
+
+            // Show the rest of the backgrounds every 10 seconds
+            setInterval(changeBackgroundImageTwo, 10000);
+        </script>
+
         <section class="section">
             <div class="container container--city">
+                <h1 class="visually-hidden">1</h1>
                 <div class="city">
                     <div class="city__h1">Найт-Сити изменит<br class="br__h1__hero" style="display: none;"> тебя
                         навсегда!</div>
@@ -61,10 +132,10 @@
                         твои поступки влияют на ход сюжета и всё, что тебя окружает.</div>
                     <div class="city__images">
                         <div class="city__images__number">
-                            <img class="city__image__one" src="img/Rectangle 62.jpg" alt="">
-                            <img class="city__image__one" src="img/Rectangle 63.png" alt="">
+                            <img class="city__image__one" src="img/Rectangle62.jpg" alt="">
+                            <img class="city__image__one" src="img/Rectangle63.png" alt="">
                         </div>
-                        <img class="city__image__two" src="img/Rectangle 61.png" alt="">
+                        <img class="city__image__two" src="img/Rectangle61.png" alt="">
                     </div>
                 </div>
             </div>
@@ -75,11 +146,10 @@
                 <div class="section__action__header">
                     <img src="img/action.svg" alt="action">
                     <div class="section__action__header__image">
-                        <div class="section__action__header__image__one"><img class="section__form__image__one"
-                                src="img/xbox.png" alt="1">
+                        <div class="section__action__header__image__one"><img class="section__form__image__one" src="img/xbox.png"
+                                alt="1">
                         </div>
-                        <div class="section__action__header__image__two"><img class="section__form__image__two"
-                                src="img/ps5.png" alt="2">
+                        <div class="section__action__header__image__two"><img class="section__form__image__two" src="img/ps5.png" alt="2">
                         </div>
                     </div>
                     <h1 class="section__action__header__h1">Играй и<br class="br__h1__action"> выигрывай!</h1>
@@ -101,25 +171,23 @@
                             <input class="form" type="text" placeholder="Твой е-mail">
                         </div>
                         <div class="section__action__scrin__info">
-                            <a class="section__action__scrin__link" href="#" id="attachScreenshot">Прикрепить
-                                скриншот</a>
+                            <a class="section__action__scrin__link" href="#" id="attachScreenshot">Прикрепить скриншот</a>
                             <p class="section__action__scrin__paragraph">.png / .jpg / .pdf</p>
                             <input type="file" id="fileInput" style="display: none">
-                            <a class="section__action__scrin__link" href="#" id="detachScreenshot">Открепить
-                                скриншот</a>
+                            <a class="section__action__scrin__link" href="#" id="detachScreenshot">Открепить скриншот</a>
                         </div>
                         <div class="section__action__button">
                             <button class="section__action__button__first">Отправить</button>
                         </div>
                         <div class="section__action__form__link__info">
-                            <a class="section__action__form__link" href="#" onclick="toggleCheckbox(event)">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="checkbox">
-                                    <rect x="0.5" y="0.5" width="13" height="13" stroke="#777777" />
-                                    <path d="M10.9498 4.08233L6.00002 9.03208L3.17159 6.20365" stroke="#F8F200" />
-                                </svg>
-                                Согласен на обработку персональных данных
-                            </a>
+                                <a class="section__action__form__link" href="#" onclick="toggleCheckbox(event)">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="checkbox">
+                                        <rect x="0.5" y="0.5" width="13" height="13" stroke="#777777" />
+                                        <path d="M10.9498 4.08233L6.00002 9.03208L3.17159 6.20365" stroke="#F8F200" />
+                                    </svg>
+                                    Согласен на обработку персональных данных
+                                </a>
                             <script>
                                 function toggleCheckbox(event) {
                                     event.preventDefault();
@@ -171,11 +239,9 @@
                 grid-row: 1 / 4;
                 grid-column: -1 / 2;
                 ">
-                    <div class="section__action__form__image__one"><img class="section__form__image__one"
-                            src="img/xbox.png" alt="1">
+                    <div class="section__action__form__image__one"><img class="section__form__image__one" src="img/xbox.png" alt="1">
                     </div>
-                    <div class="section__action__form__image__two"><img class="section__form__image__two"
-                            src="img/ps5.png" alt="2">
+                    <div class="section__action__form__image__two"><img class="section__form__image__two" src="img/ps5.png" alt="2">
                     </div>
                 </div>
             </div>
@@ -193,22 +259,17 @@
                         </div>
                     </div>
                     <div class="section__info__title">
-                        <h1 class="section__info__h1">Полное <br class="br__info">погружение <br class="br__info">вместе
-                            с HP
+                        <h1 class="section__info__h1">Полное <br class="br__info">погружение <br class="br__info">вместе с HP
                         </h1>
-                        <p class="section__info__paragraph">Погрузись в современные экшен-игры с реалистичным
-                            изображением с
+                        <p class="section__info__paragraph">Погрузись в современные экшен-игры с реалистичным изображением с
                             помощью монитора с
                             диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай
                             реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</p>
                         <div class="section__info__links">
-                            <a class="section__info__link" href="#"><img src="img/politra.svg" alt="#">Яркие насыщенные
-                                цвета</a>
-                            <a class="section__info__link" href="#"><img src="img/zvezdi.svg" alt="#">Кристальная
-                                четкость
+                            <a class="section__info__link" href="#"><img src="img/politra.svg" alt="#">Яркие насыщенные цвета</a>
+                            <a class="section__info__link" href="#"><img src="img/zvezdi.svg" alt="#">Кристальная четкость
                                 изображения</a>
-                            <a class="section__info__link" href="#"><img src="img/copy.svg" alt="#">Быстрые движения и
-                                плавный
+                            <a class="section__info__link" href="#"><img src="img/copy.svg" alt="#">Быстрые движения и плавный
                                 геймплей</a>
                         </div>
                         <div class="section__info__button">
@@ -229,15 +290,12 @@
                 <div class="section__info__complect">
                     <h2 class="section__info__complect__h2">В комплект входит:</h2>
                     <div class="section__info__complect__link">
-                        <a class="section__info__complect__links" href="#"><img src="img/disk.svg" alt="!">Футляр с
-                            игровыми
+                        <a class="section__info__complect__links" href="#"><img src="img/disk.svg" alt="!">Футляр с игровыми
                             дисками</a>
-                        <a class="section__info__complect__links" href="#"><img src="img/info.svg" alt="!">Футляр с
-                            кодом для
+                        <a class="section__info__complect__links" href="#"><img src="img/info.svg" alt="!">Футляр с кодом для
                             загрузки игры и
                             дисками (pc)</a>
-                        <a class="section__info__complect__links" href="#"><img src="img/collections.svg"
-                                alt="!">Справочник с
+                        <a class="section__info__complect__links" href="#"><img src="img/collections.svg" alt="!">Справочник с
                             информацией об игровом
                             мире</a>
                     </div>
@@ -246,11 +304,9 @@
                     <h2 class="section__info__complect__h2">Выберите платформу:</h2>
                     <div class="section__info__complect__images">
                         <a href="#"><img class="section__info__complect__image" src="img/PC.svg" alt="pc"></a>
-                        <a href="#"><img class="section__info__complect__image" src="img/xbox-one-3 logo.svg"
-                                alt="xbox-one"></a>
+                        <a href="#"><img class="section__info__complect__image" src="img/xbox-one-3logo.svg" alt="xbox-one"></a>
                         <a href="#"><img class="section__info__complect__image" src="img/g13831.svg" alt="stadia"></a>
-                        <a href="#"><img class="section__info__complect__image" src="img/Playstation logo.svg"
-                                alt="ps4"></a>
+                        <a href="#"><img class="section__info__complect__image" src="img/Playstationlogo.svg" alt="ps4"></a>
                     </div>
                 </div>
             </div>
@@ -263,7 +319,7 @@
             <div class="container container--footer">
                 <div class="footer__logos">
                     <a href="#"><img src="img/logo1.svg" alt="logo"></a>
-                    <a href="#"><img src="img/CD_Projekt_logo 1.svg" alt="logo"></a>
+                    <a href="#"><img src="img/CD_Projekt_logo1.svg" alt="logo"></a>
                 </div>
                 <div class="footer__titles">
                     <a class="footer__title" href="#">Лицензия</a>
@@ -280,7 +336,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 
 </html>

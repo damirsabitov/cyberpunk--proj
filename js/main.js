@@ -73,3 +73,39 @@ function toggleCheckbox(event) {
     const svg = event.currentTarget.querySelector('svg');
     svg.classList.toggle('checked');
 }
+
+const attachScreenshot = document.getElementById('attachScreenshot');
+const detachScreenshot = document.getElementById('detachScreenshot');
+const fileInput = document.getElementById('fileInput');
+let attachedImage = null;
+
+attachScreenshot.addEventListener('click', function (e) {
+    e.preventDefault();
+    fileInput.click();
+});
+
+detachScreenshot.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (attachedImage) {
+        attachedImage.remove();
+        attachedImage = null;
+    }
+});
+
+fileInput.addEventListener('change', function () {
+    const file = fileInput.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            if (attachedImage) {
+                attachedImage.remove();
+            }
+            const img = new Image();
+            img.src = e.target.result;
+            img.style.maxWidth = '100%';
+            document.querySelector('.scrin').appendChild(img);
+            attachedImage = img;
+        };
+        reader.readAsDataURL(file);
+    }
+});
