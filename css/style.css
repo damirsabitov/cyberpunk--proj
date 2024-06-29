@@ -408,26 +408,26 @@ body {
     padding-bottom: 70px;
 }
 
-.info__h1 {
+.section__info__h1 {
     font-size: 62px;
     color: #000;
 }
 
-.info__paragraph {
+.section__info__paragraph {
     max-width: 624px;
     font-size: 18px;
     line-height: 189%;
     color: #000;
 }
 
-.info__links {
+.section__info__links {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-top: 25px;
 }
 
-.info__link {
+.section__info__link {
     display: flex;
     gap: 5px;
     text-decoration: none;
@@ -435,11 +435,11 @@ body {
     color: #000;
 }
 
-.info__button {
+.section__info__button {
     margin-top: 40px;
 }
 
-.info__button--more {
+.section__info__button__more {
     background: #000;
     border: none;
     font-weight: 700;
@@ -461,33 +461,33 @@ body {
     padding-left: 35px;
 }
 
-.info__buy {
+.section__info__buy {
     padding-top: 70px;
 }
 
-.info__but--h1 {
+.section__info__buy__h1 {
     font-size: 62px;
     color: #fff;
 }
 
-.info__complect {
+.section__info__complect {
     padding-top: 10px;
 }
 
-.info__complect--h2 {
+.section__info__complect__h2 {
     font-weight: 700;
     font-size: 24px;
     color: #52bedc;
 }
 
-.info__complect--link {
+.section__info__complect__link {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding-top: 22px;
 }
 
-.info__complect--links {
+.section__info__complect__links {
     display: flex;
     gap: 5px;
     font-size: 18px;
@@ -495,12 +495,12 @@ body {
     text-decoration: none;
 }
 
-.info__platforms {
+.section__info__platforms {
     margin-top: 70px;
     margin-bottom: 30px;
 }
 
-.info__complect--images {
+.section__info__complect__images {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
@@ -509,7 +509,7 @@ body {
     padding-top: 25px;
 }
 
-.img__section--buy {
+.section__image__buy {
     object-fit: cover;
     width: 50%;
 }
@@ -701,7 +701,7 @@ body {
         flex-direction: column;
     }
 
-    .info__h1 {
+    .section__info__h1 {
         font-size: 40px;
     }
 
@@ -709,7 +709,7 @@ body {
         display: none;
     }
 
-    .info__paragraph {
+    .section__info__paragraph {
         font-size: 16px;
     }
 
@@ -721,7 +721,7 @@ body {
         flex-direction: column;
     }
 
-    .img__section--buy {
+    .section__image__buy {
         width: auto;
     }
 
@@ -744,11 +744,11 @@ body {
         font-size: 40px;
     }
 
-    .info__complect--h2 {
+    .section__info__complect__h2 {
         font-size: 20px;
     }
 
-    .info__complect--links {
+    .section__info__complect__links {
         font-size: 16px;
     }
 
