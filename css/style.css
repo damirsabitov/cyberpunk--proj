@@ -116,7 +116,7 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    background-image: url(/img/Rectangle59.svg);
+    background-image: url(/css/img1/Rectangle59.svg);
     background-size: cover;
     flex-direction: column;
     padding-top: 20px;
@@ -129,7 +129,7 @@ body {
     max-height: 220px;
     font-weight: 400;
     font-size: 62px;
-    color: #000;
+    color: #000000;
 }
 
 .section__button {
@@ -322,7 +322,7 @@ body {
 .section__action__header__image__one {
     max-width: 200px;
     width: 100%;
-    background: url(/img/Layer521.svg) right no-repeat;
+    background: url(/css/img1/Layer521.svg) right no-repeat;
     background-size: 200px;
     padding-left: 20px;
 }
@@ -330,7 +330,7 @@ body {
 .section__action__header__image__two {
     max-width: 200px;
     width: 100%;
-    background: url(/img/layer531.svg) right no-repeat;
+    background: url(/css/img1/layer531.svg) right no-repeat;
     background-size: 200px;
     padding-left: 20px;
 }
@@ -344,7 +344,7 @@ body {
 .section__action__form__image__one {
     max-width: 460px;
     width: 100%;
-    background: url(/img/layer5.svg) left no-repeat;
+    background: url(/css/img1/layer5.svg) left no-repeat;
     background-size: 390px;
     padding-top: 25px;
     padding-left: 125px;
@@ -354,7 +354,7 @@ body {
 .section__action__form__image__two {
     max-width: 460px;
     width: 100%;
-    background: url(/img/layer6.svg) right no-repeat;
+    background: url(/css/img1/layer6.svg) right no-repeat;
     background-size: 390px;
     padding-top: 25px;
     padding-left: 125px;
